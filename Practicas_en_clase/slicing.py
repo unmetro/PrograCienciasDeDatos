@@ -22,3 +22,4 @@ print(lista[::4])
 print(lista[::-1])
 print(lista[-2:1:-2])
 print("------------")
+# lista[x:y:z] x es donde empieza, y es donde termina, z el incremento 
