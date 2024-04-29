@@ -24,8 +24,6 @@ a = np.arange(3) #crea una matriz de 0 al 2 como un vector
 
 m.shape #imprime 3,2
 a.shape #imprime 3
-
-
 """"
 primero paso del broadcasting
 1-checar si tienen la misma dimension
@@ -33,3 +31,17 @@ primero paso del broadcasting
 3-aplicar el broadcasting 
 """
 
+e = np.arange(4,15,2).reshape((3,2))
+"""
+4,6
+8,10
+12,14
+"""
+f = np.arange(3)
+
+a = np.array([[4,5,7],[8,9,2]])
+"""
+4,5,7
+8,9,2
+"""
+b = np.arange(3)
