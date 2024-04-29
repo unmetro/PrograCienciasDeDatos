@@ -1,44 +1,41 @@
-#mergesort Leo
 
+arreglo = [2,3,5,1,7,4,4,4,2,6,0]
+print(arreglo)
 
 def mergesort(arreglo):
-    if len(arreglo) <= 1:
-        return arreglo
-
-    # Dividir el arreglo en mitades
-    mitad = len(arreglo) // 2
-    izquierdo = arreglo[:mitad]
-    derecho = arreglo[mitad:]
-
-    # Aplicar mergesort a ambas mitades
-    izquierdo = mergesort(izquierdo)
-    derecho = mergesort(derecho)
-
-    # Combinar las dos mitades ordenadas
-    return merge(izquierdo, derecho)
-
-def merge(izquierdo1, derecho1):
-    result = []
-    i_izq = i_der = 0
-
-    while i_izq < len(izquierdo1) and i_der < len(derecho1):
-        if izquierdo1[i_izq] < derecho1[i_der]:
-            result.append(izquierdo1[i_izq])
-            i_izq += 1
-        else:
-            result.append(derecho1[i_der])
-            i_der += 1
-
-    # Agregar los elementos restantes de ambas mitades (si hay)
-    result.extend(izquierdo1[i_izq:])
-    result.extend(derecho1[i_der:])
-
-    return result
-
-
-arreglo = [12, 11, 13, 5, 6, 7,87,2,3,5]
-print("Arreglo original:", arreglo)
-
-arreglo = mergesort(arreglo)
-
-print("Arreglo ordenado:", arreglo)
+    if len(arreglo) > 1:
+        arr_iq = arreglo[:len(arreglo)//2] #aqui regresa el arrelgo original pero corotado, empezando de 0 hasta la mitas
+        arr_der = arreglo[len(arreglo)//2:] #aqui regresa el arrelgo original pero empezando desde la mitad hasta el tamanio del arreglo n
+        
+        #nuestra recursion
+        mergesort(arr_iq)
+        mergesort(arr_der)
+        
+        #implementamos el merge
+        i = 0 #para estar concientes del valor mas izquierdo del arreglo
+        j = 0 #valor mas derecho del arreglo
+        k = 0 #index del merge
+        while i < len(arr_iq) and j < len(arr_der):
+            if arr_iq[i] < arr_der[j]:
+                arreglo[k] = arr_iq[i]
+                i += 1
+                k += 1
+            else:
+                arreglo[k] = arr_der[j]
+                j += 1
+                k += 1
+                
+        while i < len(arr_iq):
+            arreglo[k] = arr_iq[i]
+            i += 1
+            k += 1
+        
+        while j < len(arr_der):
+            arreglo[k] = arr_der[j]
+            j += 1
+            k += 1
+    return arreglo
+            
+mergesort(arreglo)
+print(arreglo)
+        
