@@ -19,12 +19,12 @@ def particion(arr, izq, der): #aqui declaramos nuestro pivot
             arr[i] = arr[j]
             arr[j] = temp
             #intecambio de las posiciones del elemento i y j en el arreglo
+        print(arreglo)
     
     #intercambio del pivote con el elemnto en la posicion i + 1      
     temp = arr[i + 1]
     arr[i + 1] = arr[der]
     arr[der] = temp
-    print(arreglo)
     return i + 1
 
 arreglo = [22,11,88,66,55,77,33,44]
