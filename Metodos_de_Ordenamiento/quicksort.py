@@ -1,4 +1,6 @@
 
+import random
+
 def quicksort(arr, izq, der): #tiene el arreglo, luego tiene el principio y el final del arreglo
     if izq < der: 
         posparticion = particion(arr, izq, der)
@@ -27,7 +29,8 @@ def particion(arr, izq, der): #aqui declaramos nuestro pivot
     arr[der] = temp
     return i + 1
 
-arreglo = [22,11,88,66,55,77,33,44]
+arreglo = [x*3 for x in range(-15,10,2)]
+random.shuffle(arreglo)
 print(arreglo)
 
 quicksort(arreglo, 0, len(arreglo)-1)

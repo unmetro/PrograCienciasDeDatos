@@ -1,6 +1,10 @@
 
-listaDesordenada = [1,8,5,2,0]
-print(listaDesordenada)
+import random
+
+lista = [i for i in range(-10,15,3)]
+random.shuffle(lista)
+
+print(lista)
 
 #necesitamos ir una vez por cada elemento en la lista
 
@@ -19,7 +23,7 @@ def bsort(arreglo):
     return arreglo
     
 
-listaOrdenada = bsort(listaDesordenada)
+listaOrdenada = bsort(lista)
 print(listaOrdenada)
 
 

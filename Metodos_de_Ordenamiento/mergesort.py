@@ -1,5 +1,7 @@
+import random
 
-arreglo = [2,3,5,1,7,4,4,4,2,6,0]
+arreglo = [i for i in range(10)]
+random.shuffle(arreglo)
 print(arreglo)
 
 def mergesort(arreglo):
