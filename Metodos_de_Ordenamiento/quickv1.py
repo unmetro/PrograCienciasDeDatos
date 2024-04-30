@@ -1,6 +1,6 @@
 #Alan Daniel Palma Pacheco quickv1
 # Lista inicial
-lista = [2,9,8,7,4,5,6,3,0,1]
+lista = [9,2,8,7,4,5,6,3,0,1]
 
 # Función para la separación del arreglo en partes menores, pivote y mayores
 def separacion(lista):
@@ -12,6 +12,7 @@ def separacion(lista):
     izq = [] 
     dere = []
     pivote = lista[0]  # Pivote es el primer elemento de la lista
+    
     
     # Recorre la lista desde el segundo elemento
     for i in range(1, len(lista)):
