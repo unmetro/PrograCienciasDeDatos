@@ -1,3 +1,4 @@
+#Alan Daniel Palma Pacheco quickv1
 # Lista inicial
 lista = [2,9,8,7,4,5,6,3,0,1]
 
