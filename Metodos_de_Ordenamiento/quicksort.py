@@ -6,7 +6,7 @@ def quicksort(arreglo): #recibe un arreglo
         arr_izq = [i for i in arreglo if i < pivot] #este arreglo almacena todos los elementos menores al pivote
         arr_mid = [i for i in arreglo if i == pivot] #este todos los elementos iguales al pivote
         arr_der = [i for i in arreglo if i > pivot] #este todos los elemetnos mayores al pivote
-        return quicksort(arr_izq) + arr_mid + quicksort(arr_der) #es lo recursivo para que se llame a si misma
+        return quicksort(arr_izq) + arr_mid + quicksort(arr_der) #es lo recursivo para que se llame a si misma concatenar
     return arreglo
 
 lista = [i for i in range(0,15,2)]
