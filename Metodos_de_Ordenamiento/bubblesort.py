@@ -1,13 +1,12 @@
 
 import random
 
-lista = [i for i in range(-10,15,3)]
+lista = [i for i in range(0,15,2)]
 random.shuffle(lista)
 
 print(lista)
 
 #necesitamos ir una vez por cada elemento en la lista
-
 def bsort(arreglo):
     for i in range(len(arreglo)): 
         #i representa cada elemento de la lista ya arreglada

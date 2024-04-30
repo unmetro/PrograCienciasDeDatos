@@ -29,7 +29,7 @@ def particion(arr, izq, der): #aqui declaramos nuestro pivot
     arr[der] = temp
     return i + 1
 
-arreglo = [x*3 for x in range(-15,10,2)]
+arreglo = [x*3 for x in range(-1,10,2)]
 random.shuffle(arreglo)
 print(arreglo)
 

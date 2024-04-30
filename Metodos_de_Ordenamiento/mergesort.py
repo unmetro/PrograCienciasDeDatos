@@ -1,6 +1,6 @@
 import random
 
-arreglo = [i for i in range(10)]
+arreglo = [i for i in range(7)]
 random.shuffle(arreglo)
 print(arreglo)
 
