@@ -3,8 +3,10 @@ import random
 
 lista = [i for i in range(0,15,2)]
 random.shuffle(lista)
-
+print("Esta es la primera lista")
 print(lista)
+
+
 
 #necesitamos ir una vez por cada elemento en la lista
 def bsort(arreglo):
@@ -23,7 +25,9 @@ def bsort(arreglo):
     
 
 listaOrdenada = bsort(lista)
+
+print("Ya quedo el bubblesort") 
+
 print(listaOrdenada)
 
 
-print("Ya quedo el bubblesort") 
