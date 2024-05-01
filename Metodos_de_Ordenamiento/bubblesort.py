@@ -1,4 +1,4 @@
-
+# Esto es un comentario del profe
 import random
 
 lista = [i for i in range(1,101)]
