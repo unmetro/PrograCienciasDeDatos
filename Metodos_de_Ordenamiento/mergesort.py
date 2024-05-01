@@ -1,3 +1,4 @@
+#Esto es otro comentario del profe
 import random
 
 arreglo = [i for i in range(7)]
