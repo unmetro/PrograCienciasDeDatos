@@ -1,7 +1,7 @@
 
 import random
 
-lista = [i for i in range(0,15,2)]
+lista = [i for i in range(1,101)]
 random.shuffle(lista)
 print("Esta es la primera lista")
 print(lista)
