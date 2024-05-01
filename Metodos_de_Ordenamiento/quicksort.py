@@ -1,5 +1,5 @@
 import random
-
+# Revisado
 def quicksort(arreglo): #recibe un arreglo
     if len(arreglo) > 1: #si arreglo es mayor a 1 se ejecuta el codigo 
         pivot = arreglo[len(arreglo)//2] #establecemos nuestro pivote que es el elemento en la mitad
