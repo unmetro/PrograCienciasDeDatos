@@ -1,5 +1,5 @@
 # PrograCienciasDeDatos
-Trabajo en equipo
+Trabajos en equipo o solo que se realizaron 
+el 3er semestre de la carrera Ciencias De Datos 
 
 
-Hola, ya pude agregar algo al Readme
