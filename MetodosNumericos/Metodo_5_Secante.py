@@ -10,7 +10,7 @@ def secante(pzero,puno,tol,iter):
     quno = funcion1(puno)
     
     while( i <= iter):
-        if((quno - qzero) == 0 ):
+        if abs(quno - qzero) == 0:
             return print("division por 0 no se puede")
         
         p = puno - quno*(puno - pzero)/(quno - qzero)
