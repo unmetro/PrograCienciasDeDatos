@@ -10,9 +10,6 @@ f2 = lambda x,y: x+y
 
 print(f2(3,4))
 
-
-
-
 lista1 = []
 for i in range(1,11):
     lista1.append(i)
