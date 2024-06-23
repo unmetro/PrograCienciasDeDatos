@@ -1,5 +1,5 @@
 import random
-
+# Revisado
 def quicksort(arreglo): #recibe un arreglo
     if len(arreglo) > 1: #si arreglo es mayor a 1 se ejecuta el codigo 
         pivot = arreglo[len(arreglo)//2] #establecemos nuestro pivote que es el elemento en la mitad
@@ -9,7 +9,7 @@ def quicksort(arreglo): #recibe un arreglo
         return quicksort(arr_izq) + arr_mid + quicksort(arr_der) #es lo recursivo para que se llame a si misma concatenar
     return arreglo
 
-lista = [i for i in range(0,15,2)]
+lista = [i for i in range(3,31,3)]
 random.shuffle(lista)
 print(lista)
 

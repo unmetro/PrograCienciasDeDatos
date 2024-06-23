@@ -1,3 +1,4 @@
+#Esto es otro comentario del profe
 import random
 
 arreglo = [i for i in range(7)]
@@ -12,7 +13,9 @@ def mergesort(arreglo):
         #nuestra recursion
         mergesort(arr_iq)
         mergesort(arr_der)
-        
+        if len(arreglo) == 7:
+            print(arr_iq)
+            print(arr_der)
         #implementamos el merge
         i = 0 #para estar concientes del valor mas izquierdo del arreglo
         j = 0 #valor mas derecho del arreglo
