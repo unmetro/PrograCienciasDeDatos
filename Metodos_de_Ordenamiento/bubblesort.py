@@ -28,6 +28,6 @@ listaOrdenada = bsort(lista)
 
 print("Ya quedo el bubblesort") 
 
-print(listaOrdenada)
+print(listaOrdenada) 
 
 
